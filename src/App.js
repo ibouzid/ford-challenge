@@ -1,25 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
+import './App.scss';
+import { Routes, Route } from 'react-router-dom';
+import AddAuthor from './Components/AddAuthor/AddAuthor';
+import Header from './Components/Header/Header';
+import Footer from './Components/Footer/Footer';
+import MainPage from './Components/MainPage/MainPage';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+const App = () =>{
+	return (
+		<div className='main'>
+			<Header />
+			<Routes>
+				<Route path='/' exact element={<MainPage />} />
+				<Route path='/add-new-author' exact element={<AddAuthor />} />
+			</Routes>
+			<Footer />
+		</div>
+	);
 }
 
 export default App;

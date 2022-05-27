@@ -1,0 +1,56 @@
+.form-inputs {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-row {
+  display: flex;
+  margin: 10px;
+}
+
+.input {
+  width: 400px;
+}
+
+.label {
+  display: inline-block;
+  width: 200px;
+  height: 30px;
+}
+
+.add-button {
+  border-radius: 10px;
+  margin: 50px;
+  width: 300px;
+}
+button:hover {
+  background-color: black;
+  color: white;
+  cursor: pointer;
+}
+
+.valid {
+  margin-left: 20px;
+  color: green;
+}
+
+.invalid {
+  margin-left: 20px;
+  color: red;
+}
+
+@media screen and (max-width: 600px) {
+  .form-row {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+  }
+  .input{
+    width: 200px;
+  }
+  .add-button{
+    width: 200px;
+  }
+}
