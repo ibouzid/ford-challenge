@@ -1,0 +1,15 @@
+$author-font: 1rem;
+
+.author-card {
+  border: 2px solid black;
+  font-size: $author-font;
+}
+.job-info-btn {
+  display: flex;
+  padding: 5px;
+  border: none;
+  background: none;
+}
+.name {
+  display: flex;
+}

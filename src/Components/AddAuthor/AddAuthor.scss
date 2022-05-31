@@ -24,11 +24,11 @@
   border-radius: 10px;
   margin: 50px;
   width: 300px;
-}
-button:hover {
-  background-color: black;
-  color: white;
-  cursor: pointer;
+  &:hover {
+    background-color: black;
+    color: white;
+    cursor: pointer;
+  }
 }
 
 .valid {
@@ -47,10 +47,10 @@ button:hover {
     flex-direction: column;
     margin: 10px;
   }
-  .input{
+  .input {
     width: 200px;
   }
-  .add-button{
+  .add-button {
     width: 200px;
   }
 }
